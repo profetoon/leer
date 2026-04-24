@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: profetoon/leer
+  branch: main
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: "niveles"
+    label: "Textos"
+    folder: "content/niveles"
+    create: true
+    nested:
+      depth: 2
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Nivel", name: "nivel", widget: "select", options: ["A1", "A2", "B1", "B2"] }
+      - { label: "Tema", name: "tema", widget: "string", required: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
