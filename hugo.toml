@@ -1,0 +1,9 @@
+baseURL = "https://yoursitename.netlify.app/"
+languageCode = "es"
+title = "Lecturas en Español"
+theme = "book"
+
+[params]
+  BookSection = "niveles"
+  BookSearch = true
+  BookToC = true
